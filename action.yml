@@ -1,0 +1,90 @@
+name: 'React Native Release'
+description: 'React Native Release'
+author: 'Billgo'
+branding:
+  icon: 'package'  
+  color: 'blue'
+inputs:
+  token:
+    required: true
+    description: 'github token'
+  refname:
+    required: false
+    description: 'ref name, tag or branch'
+  cdnhost:
+    required: false
+    description: 'cdn host'
+    default: 'https://cdn.jsdelivr.net'
+  cdnpath:
+    required: false
+    description: 'cdn path'
+    default: '/gh'
+  iosbundleoutput:
+    required: false
+    description: 'ios bundle path'
+    default: 'release/ios/main.js'
+  iosqrpath:
+    required: false
+    description: 'ios qr path'
+    default: 'release/qrcode/ios.png'
+  iosassetsdest:
+    required: false
+    description: 'ios assets dest'
+    default: 'release/ios/assets'
+  iossourcemapoutput:
+    required: false
+    description: 'File name where to store the sourcemap file for resulting bundle'
+    default: 'release/ios/main.map'
+  iossourcemapuseabsolutepath:
+    required: false
+    description: 'Report SourceMapURL using its full path'
+    default: ''
+  iossourcemapsourcesroot:
+    required: false
+    description: 'Path to make sourcemaps sources entries relative to'
+    default: ''
+  androidbundleoutput:
+    required: false
+    description: 'android bundle path'
+    default: 'release/android/main.js'
+  androidqrpath:
+    required: false
+    description: 'android qr path'
+    default: 'release/qrcode/android.png'
+  androidassetsdest:
+    required: false
+    description: 'android assets dest'
+    default: 'release/android/assets'
+  androidsourcemapoutput:
+    required: false
+    description: 'File name where to store the sourcemap file for resulting bundle'
+    default: 'release/android/main.map'
+  androidsourcemapuseabsolutepath:
+    required: false
+    description: 'Report SourceMapURL using its full path'
+    default: ''
+  androidsourcemapsourcesroot:
+    required: false
+    description: 'Path to make sourcemaps sources entries relative to'
+    default: ''
+  appname:
+    required: false
+    description: 'app name'
+  logo:
+    required: false
+    description: 'app logo'
+  releaseprefix:
+    required: false
+    description: 'release markdown prefix'
+    default: 'Use [Taro Playground App](https://github.com/wuba/taro-playground) to scan the following qr codes:'
+  workingdirectory:
+    required: false
+    description: 'action working directory'
+    default: '.'
+  prerelease:
+    required: false
+    description: 'whether to generate a prerelease'
+    default: 'false'
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
