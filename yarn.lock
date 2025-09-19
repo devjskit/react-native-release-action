@@ -926,10 +926,10 @@
     "@typescript-eslint/types" "5.33.1"
     eslint-visitor-keys "^3.3.0"
 
-"@vercel/ncc@^0.33.1":
-  version "0.33.4"
-  resolved "https://registry.yarnpkg.com/@vercel/ncc/-/ncc-0.33.4.tgz#e44a87511f583b7ba88e4b9ae90eeb7ba252b872"
-  integrity sha512-ln18hs7dMffelP47tpkaR+V5Tj6coykNyxJrlcmCormPqRQjB/Gv4cu2FfBG+PMzIfdZp2CLDsrrB1NPU22Qhg==
+"@vercel/ncc@^0.38.4":
+  version "0.38.4"
+  resolved "https://registry.yarnpkg.com/@vercel/ncc/-/ncc-0.38.4.tgz#e1fb8be9e7ed33bf44c121131d4c6e95f784afac"
+  integrity sha512-8LwjnlP39s08C08J5NstzriPvW1SP8Zfpp1BvC2sI35kPeZnHfxVkCwu4/+Wodgnd60UtT1n8K8zw+Mp7J9JmQ==
 
 abab@^2.0.3, abab@^2.0.5:
   version "2.0.6"
